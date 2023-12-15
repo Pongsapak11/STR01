@@ -13,9 +13,6 @@ st_lottie(lottie3)
 st.header("pongsapak ploymaklam")
 
 st.title('การทดสอบเขียนเว็บด้วย Python')
-lot3="https://lottie.host/9d7858db-0b59-4395-ae0f-b57203577235/vTJKGelBz0.json"
-lottie3 = load_lottieurl(lot3)
-st_lottie(lottie3)
 st.header('พงศภัค พลอยมะกล่ำ')
 st.subheader('สาขาวิชาเทคโนโลยีสารสนเทศ')
 st.markdown("----")
