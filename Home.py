@@ -1,3 +1,3 @@
 import streamlit as streamlit
 
-st.header("pongsapak plotmaklam")
+st.header("pongsapak ploymaklam")
