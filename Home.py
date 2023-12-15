@@ -49,3 +49,22 @@ else :
 """
 st.markdown(html_2, unsafe_allow_html=True)
 st.markdown("")
+
+ptlen = st.slider("กรุณาเลือกข้อมูล petal.length",0,10)
+ptwd = st.slider("กรุณาเลือกข้อมูล petal.width",0,10)
+
+splen = st.number_input("กรุณาเลือกข้อมูล sepal.length")
+spwd = st.number_input("กรุณาเลือกข้อมูล sepal.width")
+
+from sklearn.neighbors import KNeighborsClassifier
+import numpy as np
+
+if st.button("ทำนายผล"):
+   # ทำนาย
+   #dt = pd.read_csv("./data/iris.csv") 
+
+   X = dt.drop('variety', axis=1)
+   y = dt.variety   
+
+   Knn_model = KNeighborsClassifier(n_neighbors=3)
+   Knn_model.fit(X, y)
